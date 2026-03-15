@@ -28,11 +28,11 @@
 
   <main class="page-content">
     <section class="project-detail">
-      <h2>Mining Dashboard</h2>
+      <h2>Mining Drill Data Dashboard</h2>
       <div class="project-detail-image">
         <img src="images/mining-1.jpg" alt="Mining Dashboard">
       </div>
-      <p>
+      <!-- <p>
         The capstone to my internship at SSR Mining included making a fully operational geospatial dashboard
         that actively tracked the positions of all company drills at the Marigold Mine Site.
       </p>
@@ -44,6 +44,20 @@
       <p>
         The dashboard was built using data pipelining, using SQL and Lua to extract tags from a database so
         they could be used by a Python script to actively pull the data and plot the most recent positioning.
+      </p> -->
+      <p>
+        During my internship at SSR Mining, I developed an interactive dashboard to help visualize drilling activity at the 
+        Marigold mine site in Nevada, where operational data was previously difficult for non-technical higher-ups to access 
+        without having to dig through the deep network of the company data historian. The system aggregates drilling metrics 
+        such as depth, duration, and geospatial coordinates for six drills by extracting data from a PostgreSQL database using 
+        SQL, organizing it through a Lua script in the company’s data historian and placing the data into easily-identifiable 
+        tags, and generating an interactive geospatial visualization using Python. The dashboard displays drill locations within 
+        ~0.5° of latitude and longitude coordinates on an interactive map (plotting the most recent drill locations relative to a 
+        central local mine site server) alongside real-time drill logs and historical activity plots, allowing users to quickly 
+        interpret operational data without navigating complex backend systems. In addition to improving accessibility of drilling 
+        information, the structured tags and data pipeline developed for the project were integrated into the company’s updated 
+        Technical Data Center infrastructure. Due to company ownership, the dashboard itself cannot be shared publicly, but 
+        screenshots of key features are included.
       </p>
     </section>
 
@@ -68,18 +82,42 @@
     </section>
 
     <section class="project-detail">
-      <h2>Future Project Title</h2>
+      <h2>Marble Maze Game - ECE 3140 Final Project</h2>
       <div class="project-detail-image">
-        <img src="images/feature-2.jpg" alt="Project placeholder image">
+        <img src="images/torque-2.jpg" alt="Marble Maze Game">
       </div>
       <p>
-        This section uses the same format so you can easily duplicate it later for additional projects.
+        The Arm Torque Tracker was a project I developed and tested along with a small cohort of biomedical
+        engineering students that tracked a thrower’s arm throughout the full range of motion, allowing the
+        user to monitor internal muscle signaling and reduce strain-based injuries.
       </p>
       <p>
-        Add a short overview, your role, the tools or methods used, and the overall impact or result.
+        While on the electrical subteam, I acted as the Electrical Lead and contributed through PCB design,
+        circuit load testing, board pin mapping, and data processing.
       </p>
       <p>
-        Once you are ready, you can swap the image, title, and text while keeping the layout exactly the same.
+        This project gave me experience working across hardware and data-oriented tasks while contributing
+        to a design intended to support performance monitoring and injury prevention.
+      </p>
+    </section>
+
+    <section class="project-detail">
+      <h2>Multi-Core Processor - ECE 4750 Final Project</h2>
+      <div class="project-detail-image">
+        <img src="images/torque-3.jpg" alt="Multi-Core Processor">
+      </div>
+      <p>
+        The Arm Torque Tracker was a project I developed and tested along with a small cohort of biomedical
+        engineering students that tracked a thrower’s arm throughout the full range of motion, allowing the
+        user to monitor internal muscle signaling and reduce strain-based injuries.
+      </p>
+      <p>
+        While on the electrical subteam, I acted as the Electrical Lead and contributed through PCB design,
+        circuit load testing, board pin mapping, and data processing.
+      </p>
+      <p>
+        This project gave me experience working across hardware and data-oriented tasks while contributing
+        to a design intended to support performance monitoring and injury prevention.
       </p>
     </section>
   </main>

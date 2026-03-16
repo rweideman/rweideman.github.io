@@ -344,7 +344,7 @@ a {
 }
 /* Bold/Underline links */
 
-.content-block a, 
+.content-block a:not(.resume-button),
 .project-detail a{
   color: var(--primary);
   text-decoration: underline;

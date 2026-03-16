@@ -337,62 +337,22 @@ a {
   height: auto;
   object-fit: contain;
 }
+/* CONTACT PAGE */
+
+.content-block a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.content-block a:hover {
+  color: var(--primary-dark);
+}
 
 /* ABOUT PAGE */
-
-/* .about-intro {
-  display: grid;
-  grid-template-columns: 1fr 1.35fr;
-  gap: 2rem;
-  align-items: stretch;
-  margin-bottom: 2.5rem;
-}
-
-.about-main-image {
-  background: #fff;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  min-height: 100%;
-  display: flex;
-}
-
-.about-main-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  flex: 1;
-}
-
-.about-text-block {
-  margin-bottom: 0;
-  height: 100%;
-} */
-
-/* .about-intro {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 2rem;
-  align-items: start;
-  margin-bottom: 2.5rem;
-}
-
-.about-main-image {
-  background: #fff;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.about-main-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.about-text-block {
-  margin-bottom: 0;
-} */
 
 .about-intro {
   display: grid;

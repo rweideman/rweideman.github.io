@@ -307,6 +307,16 @@ a {
   margin-top: 1rem;
 }
 
+.project-role {
+  color: var(--primary);
+  font-family: "Playfair Display", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: -0.3rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
 .center-block {
   text-align: center;
 }

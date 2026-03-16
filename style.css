@@ -321,6 +321,11 @@ a {
   font-size: 1.2rem;
   font-weight: 700;
   box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background: var(--primary-dark);
 }
 
 .project-detail-image {

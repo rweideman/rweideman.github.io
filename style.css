@@ -358,6 +358,7 @@ a {
 .project-detail a:hover{
   color: var(--primary-dark);
 }
+
 /* RESUME PAGE */
 
 .resume-intro-block {
@@ -366,22 +367,10 @@ a {
 
 .resume-detail-row {
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 1fr 360px;
   gap: 2rem;
   align-items: stretch;
   margin-bottom: 2.5rem;
-}
-
-.resume-detail-row.reverse {
-  grid-template-columns: 1fr 360px;
-}
-
-.resume-detail-row.reverse .resume-detail-image {
-  order: 2;
-}
-
-.resume-detail-row.reverse .resume-detail-text {
-  order: 1;
 }
 
 .resume-detail-image {
@@ -393,9 +382,9 @@ a {
 
 .resume-detail-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .resume-detail-text {

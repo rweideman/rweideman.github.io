@@ -342,9 +342,9 @@ a {
 
 .about-intro {
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 1fr 1.35fr;
   gap: 2rem;
-  align-items: start;
+  align-items: stretch;
   margin-bottom: 2.5rem;
 }
 
@@ -352,6 +352,8 @@ a {
   background: #fff;
   box-shadow: var(--shadow);
   overflow: hidden;
+  min-height: 100%;
+  display: flex;
 }
 
 .about-main-image img {
@@ -359,10 +361,12 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
+  flex: 1;
 }
 
 .about-text-block {
   margin-bottom: 0;
+  height: 100%;
 }
 
 .photo-gallery-section {

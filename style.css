@@ -369,7 +369,7 @@ a {
   height: 100%;
 } */
 
-.about-intro {
+/* .about-intro {
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 2rem;
@@ -392,6 +392,33 @@ a {
 
 .about-text-block {
   margin-bottom: 0;
+} */
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+}
+
+.about-main-image {
+  background: #fff;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  align-self: start;
+}
+
+.about-main-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.about-text-block {
+  margin-bottom: 0;
+  height: 100%;
 }
 
 .photo-gallery-section {

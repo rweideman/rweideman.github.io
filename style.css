@@ -337,9 +337,10 @@ a {
   height: auto;
   object-fit: contain;
 }
-/* CONTACT PAGE */
+/* Bold/Underline links */
 
-.content-block a {
+.content-block a, 
+.project-detail a{
   color: var(--primary);
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -348,7 +349,8 @@ a {
   transition: color 0.2s ease;
 }
 
-.content-block a:hover {
+.content-block a:hover,
+.project-detail a:hover{
   color: var(--primary-dark);
 }
 

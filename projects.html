@@ -95,9 +95,19 @@
     <section class="project-detail">
       <h2>Marble Maze Game - ECE 3140 (Embedded Systems) Final Project</h2>
       <div class="project-role">Co-Lead Developer</div>
-      <div class="project-detail-image">
-        <img src="images/torque-2.jpg" alt="Marble Maze Game">
-      </div>
+      <div class="project-carousel">
+        <button class="project-carousel-btn" type="button" id="mazePrev">&#171;</button>
+
+        <div class="project-detail-image">
+          <img id="mazeImage" src="images/maze.png" alt="Maze Game image">
+            <div class="project-image-caption" id="mazeCaption">
+                Dashboard overview showing map of the Marigold mine site, drill data logs formatted into a histogram, and a 
+                refresh button to get the most recent data on command.
+            </div>
+        </div>
+
+        <button class="project-carousel-btn" type="button" id="mazeNext">&#187;</button>
+    </div>
       <p>
         For a final project in ECE 3140 (Embedded Systems), I helped develop an interactive marble maze game 
         controlled by physically tilting an FRDM-KL46Z microcontroller board, taking advantage of the board’s 

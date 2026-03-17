@@ -362,6 +362,56 @@ a {
   height: auto;
   object-fit: contain;
 }
+
+.project-carousel {
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  gap: 1rem;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+}
+
+.project-carousel-btn {
+  background: var(--white);
+  border: none;
+  color: #000;
+  font-size: 3.2rem;
+  line-height: 1;
+  cursor: pointer;
+  height: 72px;
+  box-shadow: var(--shadow);
+  font-family: Georgia, serif;
+}
+
+.project-carousel-btn:hover {
+  background: #f3f3f3;
+}
+
+.project-detail-image {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.project-detail-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-image-caption {
+  padding: 0.9rem 1rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--primary);
+  background: #fff;
+  border-top: 1px solid var(--line);
+  font-style: italic;
+}
 /* Bold/Underline links */
 
 .content-block a:not(.resume-button),

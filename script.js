@@ -99,7 +99,7 @@ setupProjectCarousel("miningImage", "miningCaption", "miningPrev", "miningNext",
   {
     src: "images/drill-data-dash-4.png",
     alt: "Mining Dashboard Depth Logs",
-    caption: "Buns ketchup."
+    caption: "Buns ketchup ."
   }
 ]);
 

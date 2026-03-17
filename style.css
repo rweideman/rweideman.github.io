@@ -624,4 +624,16 @@ a {
   .photo-gallery-grid {
     grid-template-columns: 1fr;
   }
+
+    .project-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .project-carousel-btn {
+    width: 100%;
+  }
+
+  .project-detail-image img {
+    height: auto;
+  }
 }

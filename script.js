@@ -45,3 +45,32 @@ if (featureImage && featureDots && featurePrev && featureNext) {
 
   updateFeature();
 }
+
+function setupProjectCarousel(imageId, captionId, prevId, nextId, slides) {
+  let index = 0;
+
+  const image = document.getElementById(imageId);
+  const caption = document.getElementById(captionId);
+  const prev = document.getElementById(prevId);
+  const next = document.getElementById(nextId);
+
+  if (!image || !caption || !prev || !next) return;
+
+  function updateSlide() {
+    image.src = slides[index].src;
+    image.alt = slides[index].alt;
+    caption.textContent = slides[index].caption;
+  }
+
+  prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlide();
+  });
+
+  next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateSlide();
+  });
+
+  updateSlide();
+}

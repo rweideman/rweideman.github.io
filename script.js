@@ -145,3 +145,26 @@ setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext",
     caption: "Current prototype hardware setup used for sEMG and IMU data collection."
   }
 ]);
+
+setupProjectCarousel("mazeImage", "mazeCaption", "mazePrev", "mazeNext", [
+  {
+    src: "images/maze.png",
+    alt: "Marble Maze Overview",
+    caption: "Marble Maze Game in action, the FRDM-KL46Z board acts as a controller, which when tilted a certain direction moves a ball through a maze to the goal."
+  },
+  {
+    src: "images/maze-1.png",
+    alt: "Marble Maze Grid",
+    caption: "A better look at the grid of the maze randomly generated upon each playthrough via a Python script. The goal is the red square, and the player is the blue ball."
+  },
+  {
+    src: "images/maze-2.png",
+    alt: "Marble Maze Color Logic",
+    caption: "Some calculations I did in configuring how the two on-board LEDs should change colors given the orientation of the board at any given time."
+  },
+    {
+    src: "images/maze-3.png",
+    alt: "Marble Maze Board Tilt Colors",
+    caption: "The results of the color tilt logic shown on the board as it's orientation changes in the positive and negative x and y axes."
+  }
+]);

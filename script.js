@@ -79,27 +79,27 @@ setupProjectCarousel("miningImage", "miningCaption", "miningPrev", "miningNext",
   {
     src: "images/drill-data-dash.png",
     alt: "Mining Dashboard Overview",
-    caption: "Dashboard home view showing drill positions and live activity."
+    caption: "Dashboard home overview showing map of the Marigold mine site, drill data logs formatted into a histogram, and a button with the ability to refresh the data on command."
   },
   {
     src: "images/drill-data-dash-1.png",
     alt: "Mining Dashboard Map Visualization",
-    caption: "Detailed drill metrics and operational logs for active equipment."
+    caption: "Geospatial view displaying drill positions relative to the mine site on a map of the Marigold mine site."
   },
   {
     src: "images/drill-data-dash-2.png",
     alt: "Mining Dashboard Drill Data",
-    caption: "Geospatial view displaying drill positions relative to the mine site."
+    caption: "Detailed drill logs formatted into a histogram plotting depth per drill (in feet) versus the date drilling work was logged with the ability to change the timeframe."
   },
   {
     src: "images/drill-data-dash-3.png",
     alt: "Mining Dashboard Most Recent Logs",
-    caption: "Geospatial view displaying drill positions relative to the mine site."
+    caption: "Detailed drill metrics and operational logs for latest geospatial positioning for all active equipment."
   },
   {
     src: "images/drill-data-dash-4.png",
     alt: "Mining Dashboard Depth Logs",
-    caption: "Buns ketchup ."
+    caption: "Depth logs organized into a visual table and categorized by corresponding drill, depth, and relative starting time."
   }
 ]);
 

@@ -379,6 +379,12 @@ a {
   color: var(--primary-dark);
 }
 
+.tech-label {
+  color: var(--primary);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
 /* RESUME PAGE */
 
 .resume-intro-block {

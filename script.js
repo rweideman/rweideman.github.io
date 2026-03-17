@@ -173,11 +173,11 @@ setupProjectCarousel("comp-archImage", "comp-archCaption", "comp-archPrev", "com
   {
     src: "images/comp-arch.png",
     alt: "Comp Arch Single-Core Overview",
-    caption: "A high level diagram of the single core implementation created in the base design for the final project."
+    caption: "A high level diagram of the single core implementation of a processor created in the base design for the final project."
   },
   {
     src: "images/comp-arch-1.png",
     alt: "Comp Arch Multi-Core Overview",
-    caption: "A high level diagram of the multi-core implementation created in the alternative design for the final project."
+    caption: "A high level diagram of the multi-core implementation of a processor created in the alternative design for the final project."
   }
 ]);

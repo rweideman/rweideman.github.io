@@ -568,6 +568,11 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .feature-image {
+    width: min(430px, 100%);
+    height: 280px;
+  }
+
   .arrow-btn {
     width: 100%;
   }

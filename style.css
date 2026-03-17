@@ -223,7 +223,7 @@ a {
   background: var(--white);
   color: var(--primary);
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.1rem, 1.6vw, 1.6rem);
+  font-size: clamp(1.4rem, 1.6vw, 1.6rem);
   font-weight: 700;
   text-align: center;
   padding: 0.75rem 1rem;

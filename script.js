@@ -1,9 +1,9 @@
 const featureSlides = [
-  'images/feature-1.jpg',
-  'images/feature-2.jpg',
-  'images/feature-3.jpg',
-  'images/feature-4.jpg',
-  'images/feature-5.jpg'
+  'images/resume-work-2.png',
+  'images/drill-data-dash-1.png',
+  'images/maze.png',
+  'images/torque-4.png',
+  'images/torque-5.png'
 ];
 
 const featureImage = document.getElementById('featureImage');

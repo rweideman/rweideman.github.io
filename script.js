@@ -103,20 +103,45 @@ setupProjectCarousel("miningImage", "miningCaption", "miningPrev", "miningNext",
   }
 ]);
 
-// setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext", [
-//   {
-//     src: "images/torque-1.jpg",
-//     alt: "Arm Torque Tracker device",
-//     caption: "Prototype hardware setup used for sEMG and motion data collection."
-//   },
-//   {
-//     src: "images/torque-2.jpg",
-//     alt: "Arm Torque Tracker testing",
-//     caption: "Testing setup during data acquisition and performance evaluation."
-//   },
-//   {
-//     src: "images/torque-3.jpg",
-//     alt: "Arm Torque Tracker PCB",
-//     caption: "Circuit integration and board-level design for device functionality."
-//   }
-// ]);
+setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext", [
+  {
+    src: "images/torque.png",
+    alt: "Arm Torque Tracker Overview",
+    caption: "High level overview of the Arm Torque Tracker Device. Centralized data acquistion module and muscle band modules shown next to model of an arm."
+  },
+  {
+    src: "images/torque-1.png",
+    alt: "Arm Torque Tracker Modules Overview",
+    caption: "The Arm Torque Tracker planned out into its three main components - arm bands over targetted muscle groups, a centralized data acquistion module mounted on the torso, and a wire shirt to connect the two and minimize loose wires."
+  },
+  {
+    src: "images/torque-2.png",
+    alt: "Arm Torque Tracker Early sEMG",
+    caption: "Early iterations of the sEMG module used included the Myoware Sparkfun 2.0 sEMG muscle sensors, which were tested using my arm as a demo."
+  },
+    {
+    src: "images/torque-3.png",
+    alt: "Arm Torque Tracker Early Testing",
+    caption: "Field observations were made to test the principle of the design of the Arm Torque Tracker, and to discover any hidden limitations or factors not previously considered."
+  },
+    {
+    src: "images/torque-4.png",
+    alt: "Arm Torque Tracker Circuit Mapping",
+    caption: "Pin mappings done in KiCad were used to help map out the circuit connection points and allow for a better understanding of how the various sensors came together to accurately transmit positional and sEMG data."
+  },
+    {
+    src: "images/torque-5.png",
+    alt: "Arm Torque Tracker KiCad",
+    caption: "Prototype hardware setup for the first iteration of the PCB done in KiCad with team leads."
+  },
+    {
+    src: "images/torque-6.png",
+    alt: "Arm Torque Tracker Testing",
+    caption: "Testing the prototype's ability to handle multiple sEMG inputs, which was done by placing sensors over various muscle groups in my arm and testing to see if a signal was received by our Arduino script."
+  },
+    {
+    src: "images/torque-7.png",
+    alt: "Arm Torque Tracker Current",
+    caption: "Current prototype hardware setup used for sEMG and IMU data collection."
+  }
+]);

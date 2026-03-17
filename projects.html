@@ -62,9 +62,19 @@
     <section class="project-detail">
       <h2>Arm Torque Tracker</h2>
       <div class="project-role">Electrical Subteam Lead, R&D Analyst</div>
-      <div class="project-detail-image">
-        <img src="images/torque-1.jpg" alt="Arm Torque Tracker">
-      </div>
+      <div class="project-carousel">
+        <button class="project-carousel-btn" type="button" id="miningPrev">&#171;</button>
+
+        <div class="project-detail-image">
+          <img id="torqueImage" src="images/torque.png" alt="Torque Dashboard image">
+            <div class="project-image-caption" id="torqueCaption">
+                Dashboard overview showing map of the Marigold mine site, drill data logs formatted into a histogram, and a 
+                refresh button to get the most recent data on command.
+            </div>
+        </div>
+
+        <button class="project-carousel-btn" type="button" id="torqueNext">&#187;</button>
+        </div>
       <p>
         As the Electrical Engineering lead on a multidisciplinary project team developing a wearable elbow torque tracking 
         device for the VentureWell DEBUT competition, I helped design hardware that measures muscle activity in the biceps, 

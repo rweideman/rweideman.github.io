@@ -74,3 +74,49 @@ function setupProjectCarousel(imageId, captionId, prevId, nextId, slides) {
 
   updateSlide();
 }
+
+setupProjectCarousel("miningImage", "miningCaption", "miningPrev", "miningNext", [
+  {
+    src: "images/drill-data-dash.png",
+    alt: "Mining Dashboard Overview",
+    caption: "Dashboard home view showing drill positions and live activity."
+  },
+  {
+    src: "images/drill-data-dash-1.png",
+    alt: "Mining Dashboard Map Visualization",
+    caption: "Detailed drill metrics and operational logs for active equipment."
+  },
+  {
+    src: "images/drill-data-dash-2.png",
+    alt: "Mining Dashboard Drill Data",
+    caption: "Geospatial view displaying drill positions relative to the mine site."
+  },
+  {
+    src: "images/drill-data-dash-3.png",
+    alt: "Mining Dashboard Most Recent Logs",
+    caption: "Geospatial view displaying drill positions relative to the mine site."
+  },
+  {
+    src: "images/drill-data-dash-4.png",
+    alt: "Mining Dashboard Depth Logs",
+    caption: "Hamburger."
+  }
+]);
+
+// setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext", [
+//   {
+//     src: "images/torque-1.jpg",
+//     alt: "Arm Torque Tracker device",
+//     caption: "Prototype hardware setup used for sEMG and motion data collection."
+//   },
+//   {
+//     src: "images/torque-2.jpg",
+//     alt: "Arm Torque Tracker testing",
+//     caption: "Testing setup during data acquisition and performance evaluation."
+//   },
+//   {
+//     src: "images/torque-3.jpg",
+//     alt: "Arm Torque Tracker PCB",
+//     caption: "Circuit integration and board-level design for device functionality."
+//   }
+// ]);

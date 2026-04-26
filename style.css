@@ -658,6 +658,7 @@ a {
   .project-detail-image img {
     height: auto;
   }
+}
 
 /* CONTACT PAGE */
 
@@ -820,4 +821,4 @@ a {
     grid-template-columns: 1fr;
   }
 }
-}
+

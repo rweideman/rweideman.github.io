@@ -258,6 +258,11 @@ a {
   font-family: Georgia, serif;
 }
 
+.arrow-btn:hover {
+  background: var(--gray);
+  transform: translateY(-2px);
+}
+
 .dots {
   display: flex;
   gap: 1rem;

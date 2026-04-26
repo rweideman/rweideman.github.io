@@ -26,27 +26,37 @@
     <h1>Contact</h1>
   </section>
 
-<section class="content-block contact-form-block">
-  <h2>Send Me a Message</h2>
-  <p>
-    Have a question, opportunity, or project idea? Send me a message below and I’ll get back to you.
-  </p>
+<main class="page-content">
+  <section class="contact-layout">
+    <div class="contact-message-block">
+      <h2>Send Me a Message</h2>
+      <p>
+        Have a question, opportunity, or project idea? I’d love to hear from you.
+        Fill out the form below and I’ll get back to you soon.
+      </p>
 
-  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
 
-    <button type="submit">Send Message</button>
-  </form>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
-  <div class="contact-links">
-    <p>LinkedIn: <a href="https://linkedin.com/in/rawsen-weideman" target="_blank" rel="noreferrer">linkedin.com/in/rawsen-weideman</a></p>
-    <p>GitHub: <a href="https://github.com/rweideman" target="_blank" rel="noreferrer">github.com/rweideman</a></p>
-  </div>
-</section>
+    <aside class="contact-side-links">
+      <a class="contact-side-btn" href="https://linkedin.com/in/rawsen-weideman" target="_blank" rel="noreferrer">
+        LinkedIn
+      </a>
+
+      <a class="contact-side-btn" href="https://github.com/rweideman" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    </aside>
+  </section>
+</main>

@@ -26,7 +26,7 @@
     <h1>Contact</h1>
   </section>
 
-<main class="page-content">
+<main class="page-content contact-page-content">
   <section class="contact-layout">
     <div class="contact-message-block">
       <h2>Send Me a Message</h2>
@@ -36,14 +36,22 @@
       </p>
 
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <div class="contact-field-row">
+          <div class="contact-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required>
+          <div class="contact-field">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="10" required></textarea>
+        <div class="contact-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
 
         <button type="submit">Send Message</button>
       </form>

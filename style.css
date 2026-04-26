@@ -659,29 +659,67 @@ a {
     height: auto;
   }
 
-  .contact-form {
+/* CONTACT PAGE REDESIGN */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 2.2fr 0.8fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.contact-message-block {
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-message-block h2 {
+  font-family: "Playfair Display", serif;
+  color: var(--primary);
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  margin-bottom: 1rem;
+}
+
+.contact-message-block p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+  max-width: 900px;
+}
+
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 1.5rem;
+  flex: 1;
 }
 
 .contact-form label {
-  color: var(--primary);
   font-family: "Playfair Display", serif;
-  font-weight: 700;
+  color: var(--primary);
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.9rem 1rem;
   border: 2px solid var(--line);
-  font-family: "Libre Baskerville", serif;
-  font-size: 1rem;
   background: var(--white);
   color: var(--text);
+  padding: 0.95rem 1rem;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 220px;
 }
 
 .contact-form input:focus,
@@ -692,22 +730,73 @@ a {
 
 .contact-form button {
   align-self: flex-start;
+  margin-top: 0.5rem;
   background: var(--primary);
   color: var(--white);
   border: none;
-  padding: 1rem 1.75rem;
+  padding: 1rem 1.8rem;
   font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   font-weight: 700;
   box-shadow: var(--shadow);
   cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
   background: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
-.contact-links {
-  margin-top: 2rem;
+.contact-side-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-side-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  background: var(--primary);
+  color: var(--white);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  font-weight: 700;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: background 0.2s ease, transform 0.2s ease;
+  padding: 1.5rem;
+}
+
+.contact-side-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-message-block {
+    min-height: auto;
+  }
+
+  .contact-side-links {
+    flex-direction: row;
+  }
+
+  .contact-side-btn {
+    flex: 1;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 720px) {
+  .contact-side-links {
+    flex-direction: column;
+  }
 }
 }

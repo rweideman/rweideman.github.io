@@ -767,23 +767,23 @@ a {
 .contact-side-links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
+  align-items: stretch;
 }
 
 .contact-side-btn {
-  flex: 1;
-  min-height: 260px;
-  background: var(--primary);
-  color: var(--white);
-  box-shadow: var(--shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 2rem;
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.75rem;
+  min-height: 72px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 

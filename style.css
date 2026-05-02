@@ -62,10 +62,11 @@ a {
   font-size: clamp(1.1rem, 1.5vw, 1.6rem);
   font-weight: 700;
   color: var(--white);
-  padding: 0.25rem 0.45rem;
-  margin-right: 1.05rem;
+  padding: 0.08rem 0.18rem;
+  margin-right: 1.6rem;
   transition: background-color 0.2s ease;
   position: relative;
+  display: inline-block;
 }
 
 .nav {
@@ -77,31 +78,47 @@ a {
   font-family: "Playfair Display", serif;
   font-size: clamp(1rem, 1.4vw, 1.4rem);
   font-weight: 700;
-  padding: 0.25rem 0.45rem;
-  margin: 0 0.95rem;
+  color: var(--white);
+  padding: 0.08rem 0.18rem;
   line-height: 1;
   transition: background-color 0.2s ease;
   position: relative;
+  display: inline-block;
+  margin: 0 2rem;
 }
 
-.nav a + a {
-  border-left: 2px solid rgba(255,255,255,0.35);
-  padding-left: 1.35rem;
+/* Gives the first item normal spacing without a left divider problem */
+.nav a:first-child {
+  margin-left: 0;
 }
 
+/* Clean divider that sits between links, not against the hover area */
+.nav a + a::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 1.25em;
+  background: rgba(255,255,255,0.35);
+}
+
+/* subtle hover behind text only */
 .home-link:hover,
 .nav a:hover {
-  background-color: rgba(0, 0, 0, 0.22);
+  background-color: rgba(0, 0, 0, 0.16);
   color: var(--white);
 }
 
+/* thin, straight underline */
 .home-link.active::after,
 .nav a.active::after {
   content: "";
   position: absolute;
-  left: 0.45rem;
-  right: 0.45rem;
-  bottom: -0.35rem;
+  left: 0;
+  right: 0;
+  bottom: -0.28rem;
   height: 2px;
   background: var(--white);
 }

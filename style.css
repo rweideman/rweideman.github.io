@@ -84,7 +84,7 @@ a {
   transition: background-color 0.2s ease;
   position: relative;
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 2.25rem;
 }
 
 .nav a:first-child {
@@ -94,7 +94,7 @@ a {
 .nav a + a::before {
   content: "";
   position: absolute;
-  left: -2rem;
+  left: -2.25rem;
   top: 50%;
   transform: translateY(-50%);
   width: 2px;

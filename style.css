@@ -62,7 +62,7 @@ a {
   font-size: clamp(1.1rem, 1.5vw, 1.6rem);
   font-weight: 700;
   color: var(--white);
-  padding: 0.12rem 0.35rem;
+  padding: 0.2rem 0.55rem;
   margin-right: 1.6rem;
   transition: background-color 0.2s ease;
   position: relative;
@@ -72,6 +72,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
+  gap: 2.4rem;
 }
 
 .nav a {
@@ -79,22 +80,19 @@ a {
   font-size: clamp(1rem, 1.4vw, 1.4rem);
   font-weight: 700;
   color: var(--white);
-  padding: 0.12rem 0.35rem;
+  padding: 0.2rem 0.55rem;
   line-height: 1;
   transition: background-color 0.2s ease;
   position: relative;
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0;
 }
 
-.nav a:first-child {
-  margin-left: 0;
-}
-
+/* Clean divider between links */
 .nav a + a::before {
   content: "";
   position: absolute;
-  left: -2rem;
+  left: -1.2rem;
   top: 50%;
   transform: translateY(-50%);
   width: 2px;
@@ -102,18 +100,20 @@ a {
   background: rgba(255,255,255,0.35);
 }
 
+/* Hover background */
 .home-link:hover,
 .nav a:hover {
   background-color: rgba(0, 0, 0, 0.16);
   color: var(--white);
 }
 
+/* Active underline */
 .home-link.active::after,
 .nav a.active::after {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 0.55rem;
+  right: 0.55rem;
   bottom: -0.28rem;
   height: 2px;
   background: var(--white);

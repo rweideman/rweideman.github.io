@@ -555,6 +555,50 @@ a {
   height: 100%;
 }
 
+/* EXPERIENCE HEADER WITH IMAGE/LOGO */
+
+.experience-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.experience-heading .project-role {
+  margin-top: -0.3rem;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.experience-logo {
+  height: 64px;
+  width: 190px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.experience-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Temporary placeholder style until you add real images */
+.experience-logo.placeholder {
+  border: 2px dashed var(--line);
+  background: #f7f7f7;
+  color: var(--primary);
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem;
+}
+
 /* ABOUT PAGE */
 
 .about-intro {
@@ -719,6 +763,16 @@ a {
     left: 0.45rem;
     right: 0.45rem;
     bottom: -0.25rem;
+  }
+
+  .experience-heading {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .experience-logo {
+    height: 52px;
+    width: 130px;
   }
 
   .hero {

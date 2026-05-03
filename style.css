@@ -87,12 +87,10 @@ a {
   margin: 0 2rem;
 }
 
-/* Gives the first item normal spacing without a left divider problem */
 .nav a:first-child {
   margin-left: 0;
 }
 
-/* Clean divider that sits between links, not against the hover area */
 .nav a + a::before {
   content: "";
   position: absolute;
@@ -104,14 +102,12 @@ a {
   background: rgba(255,255,255,0.35);
 }
 
-/* subtle hover behind text only */
 .home-link:hover,
 .nav a:hover {
   background-color: rgba(0, 0, 0, 0.16);
   color: var(--white);
 }
 
-/* thin, straight underline */
 .home-link.active::after,
 .nav a.active::after {
   content: "";
@@ -559,9 +555,9 @@ a {
 
 .experience-heading {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-bottom: 1.2rem;
 }
 
@@ -572,31 +568,21 @@ a {
 }
 
 .experience-logo {
-  height: 64px;
-  width: 190px;
+  height: 58px;
+  width: 150px;
   flex-shrink: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 
 .experience-logo img {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 58px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
   object-fit: contain;
   display: block;
-}
-
-/* Temporary placeholder style until you add real images */
-.experience-logo.placeholder {
-  border: 2px dashed var(--line);
-  background: #f7f7f7;
-  color: var(--primary);
-  font-family: "Playfair Display", serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-align: center;
-  padding: 0.5rem;
 }
 
 /* ABOUT PAGE */
@@ -743,9 +729,8 @@ a {
     gap: 0.6rem;
   }
 
-  .nav a + a {
-    border-left: none;
-    padding-left: 0.45rem;
+  .nav a + a::before {
+    display: none;
   }
 
   .nav a {
@@ -771,8 +756,13 @@ a {
   }
 
   .experience-logo {
-    height: 52px;
-    width: 130px;
+    height: 44px;
+    width: 105px;
+  }
+
+  .experience-logo img {
+    max-height: 44px;
+    max-width: 105px;
   }
 
   .hero {

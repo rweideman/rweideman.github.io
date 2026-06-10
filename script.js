@@ -117,7 +117,7 @@ setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext",
   {
     src: "images/torque-2.png",
     alt: "Arm Torque Tracker Early sEMG",
-    caption: "Early iterations of the sEMG module used included the Myoware Sparkfun 2.0 sEMG muscle sensors, which were tested using my arm as a demo."
+    caption: "Early iterations of the sEMG module used included the Myoware Sparkfun 2.0 sEMG muscle sensors, which were tested using my arm as a demo as Prototype v1.0."
   },
     {
     src: "images/torque-3.png",
@@ -141,8 +141,23 @@ setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext",
   },
     {
     src: "images/torque-7.png",
-    alt: "Arm Torque Tracker Current",
-    caption: "Current prototype hardware setup used for sEMG and IMU data collection."
+    alt: "Prototype v1.1",
+    caption: "Prototype hardware setup used for sEMG and IMU data collection in Prototype v1.1. Loading issues with on-board capacitors with components caused PCB malfunction."
+  },
+    {
+    src: "images/torque-8.png",
+    alt: "Prototype v2.0 Full Setup",
+    caption: "Final prototype (Prototype v2.0) hardware set up with reduced target arm muscle groups and simpler, more compact hardware."
+  },
+    {
+    src: "images/torque-9.png",
+    alt: "Prototype v2.0 Arm Expansion",
+    caption: "A better visual along the length of the arm to showcase approximate location of hardware components for Prototype v2.0."
+  },
+    {
+    src: "images/torque-10.png",
+    alt: "UI Visualization",
+    caption: "Data visualization of hardware readings with software team's UI. Graphs show voltage readings for all three target muscle groups through muscle flexation."
   }
 ]);
 

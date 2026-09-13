@@ -91,7 +91,7 @@ a {
 /* Name */
 .nav .nav-name {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 2.8vw, 2.8rem); /* Make slightly larger */
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem); /* Make slightly larger */
   font-weight: 700;
   color: var(--white);
   white-space: nowrap;

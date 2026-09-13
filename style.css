@@ -538,41 +538,51 @@ a {
   position: relative;
 }
 
-/* Hover label */
+.social-rail {
+  overflow: visible;
+}
+
+.social-link {
+  position: relative;
+  overflow: visible;
+}
+
+/* Tooltip */
 .social-link::after {
-  content: attr(data-tooltip);
+  content: attr(aria-label);
+
   position: absolute;
-  right: calc(100% + 12px);
+  right: calc(100% + 14px);
   top: 50%;
   transform: translateY(-50%);
 
   background: #1d1d1d;
-  color: #ffffff;
+  color: white;
 
   font-family: "Libre Baskerville", serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  white-space: nowrap;
 
-  padding: 0.55rem 0.75rem;
-  border-radius: 4px;
+  padding: 0.55rem 0.8rem;
+  white-space: nowrap;
 
   opacity: 0;
   visibility: hidden;
+
   pointer-events: none;
+  z-index: 1000;
 
-  transition: opacity 0.2s ease,
-              transform 0.2s ease,
-              visibility 0.2s ease;
+  transition: opacity 0.2s ease;
+}
 
-  z-index: 10;
+.social-link:hover {
+  z-index: 1000;
 }
 
 .social-link:hover::after,
 .social-link:focus-visible::after {
   opacity: 1;
   visibility: visible;
-  transform: translate(-4px, -50%);
 }
 
 

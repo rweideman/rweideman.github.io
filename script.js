@@ -161,6 +161,14 @@ setupProjectCarousel("torqueImage", "torqueCaption", "torquePrev", "torqueNext",
   }
 ]);
 
+setupProjectCarousel("digsysImage", "digsysCaption", "digsysPrev", "digsysNext", [
+  {
+    src: "images/digsys.png",
+    alt: "Finished Synth Hardware",
+    caption: "The finished digital synthesizer hardware, with a Raspberry Pi Pico2 microcontroller, keypad and slide potentiometer for UI, and DAC and speaker for audio output."
+  }
+  ]);
+
 setupProjectCarousel("mazeImage", "mazeCaption", "mazePrev", "mazeNext", [
   {
     src: "images/maze.png",
